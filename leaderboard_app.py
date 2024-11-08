@@ -145,7 +145,7 @@ for index, row in df.iterrows():
         <div class="row-container">
             <div class="rank-number">#{row['Rank']}</div>
             <div class="user-name">{row['User Name']}</div>
-            <div class="badge-count">{row['# of Skill Badges Completed']} Badges</div>
+            <div class="badge-count">{row['# of Skill Badges Completed']}/15</div>
             <div class="arcade-status {status_class}">{arcade_status}</div>
         </div>
     """, unsafe_allow_html=True)
