@@ -74,11 +74,31 @@ st.markdown("""
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         align-items: center;
     }
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .club-logo {
+        width: 100px;
+        max-width: 100%;
+        height: auto;
+    }
 </style>
 """, unsafe_allow_html=True)
 
+
+# Assuming the image path is correct
+logo_path = "Gen_AI_Speaker_Session_Post__2___1_-removebg-preview.png"  # Path to your uploaded logo image
+
+# Display the logo at the top, centered
+# st.image(logo_path, width=500)
+st.markdown(
+    f"<div style='text-align: center'><img src='https://res.cloudinary.com/dolthd0mr/image/upload/v1731057433/Gen_AI_Speaker_Session_Post__2___1_-removebg-preview_gdndwz.png' width=500></div>",
+    unsafe_allow_html=True
+)
 # Title and description with centered logo
-logo_path = "gdsc.jpeg"  # Replace with your logo file path
+ # Replace with your logo file path
 st.markdown(f"""
     <div class="leaderboard-header">
         <h1 style="font-weight: bold; font-size: 2.5rem;">GenAI Study Jams 2024</h1>
